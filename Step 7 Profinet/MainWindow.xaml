@@ -1,0 +1,13 @@
+﻿<Window x:Class="Step_7_Profinet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        xmlns:Panels="clr-namespace:Step_7_Profinet.Panels">
+    <Grid MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+        <Panels:SplashScreen x:Name="splashScreen" Visibility="Visible" OnClose="OnSplashEnd"/>
+        <Panels:UI x:Name="userInterface" Visibility="Hidden" Minimize="MinimizeCommand" Close="CloseCommand"/>
+    </Grid>
+</Window>

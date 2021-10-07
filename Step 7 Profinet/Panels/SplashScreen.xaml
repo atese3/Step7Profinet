@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="Step_7_Profinet.Panels.SplashScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"
+             Background="Transparent"
+             xmlns:Step_7_Profinet="clr-namespace:Step_7_Profinet">
+    <Grid>
+
+                <!--<Ellipse Fill="#FF938282" Width="340" Height="332" Canvas.Top="56" Canvas.Left="76" Opacity="0.295"/>
+                <Label Content="Profinet Tester" Foreground="#FF25A225" Canvas.Left="148" Canvas.Top="194" FontSize="30" FontFamily="Tw Cen MT"/>
+                <Label Content="By" Foreground="#FF25A225" Canvas.Left="220" Canvas.Top="256" FontSize="15" FontFamily="Tw Cen MT" />
+                <Label Content="EMRE ATES" Foreground="#FF25A225" Canvas.Left="192" Canvas.Top="277" FontSize="15" FontFamily="Tw Cen MT" />
+                <Image Source="/Step 7 Profinet;component/images/splash.jpg" >
+                    <Image.Effect>
+                        <DropShadowEffect BlurRadius="100" ShadowDepth="0"/>
+                    </Image.Effect>
+                </Image>-->
+                <Image Source="/Step 7 Profinet;component/images/splash.png" />
+    </Grid>
+</UserControl>

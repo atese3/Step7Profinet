@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Step_7_Profinet.Panels.UI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             xmlns:Panels="clr-namespace:Step_7_Profinet.Panels" Height="670" Width="715">
+    <Grid>
+        <Rectangle RadiusX="20" RadiusY="20">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF6E7C73" Offset="0.139"/>
+                    <GradientStop Color="#FFC5D5CB" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image Source="/Step 7 Profinet;component/Images/hare.png" Height="65" Width="65" Margin="633,8,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Visibility="Collapsed" x:Name="hareMin"/>
+        <Image Source="/Step 7 Profinet;component/Images/hare.png" Height="65" Width="65" Margin="566,8,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Visibility="Collapsed" x:Name="hareExit"/>
+        <Image Source="/Step 7 Profinet;component/Images/minimize3.png" Height="60" Width="60" Margin="568,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="Minimize_MouseLeftButtonDown" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave"/>
+        <Image Source="/Step 7 Profinet;component/Images/close-icon.png" Height="60" Width="60" Margin="635,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="Close_MouseLeftButtonDown_1" MouseEnter="Image_MouseEnter_1" MouseLeave="Image_MouseLeave_1"/>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Panels:ConnectionPanel x:Name="connectionPanel" Margin="0,-150,0,0" ConnectionOff="UIConnectionOff" ConnectionOn="UIConnectionOn"/>
+            <Panels:ReadWritePanel x:Name="readWritePanel" Margin="0,85,0,0" IsEnabled="False" Opacity=".4"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
